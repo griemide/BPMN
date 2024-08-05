@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0khwlsi" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.25.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.21.0">
+  <bpmn:process id="Process_Legende" name="LEGENDE" isExecutable="false" camunda:versionTag="1.0" camunda:historyTimeToLive="P1D" camunda:isStartableInTasklist="false">
+    <bpmn:documentation>Michael Gries, Q&amp;V Automation, 2024</bpmn:documentation>
+    <bpmn:extensionElements>
+      <camunda:properties>
+        <camunda:property name="Author" value="Michael Gries" />
+      </camunda:properties>
+    </bpmn:extensionElements>
+    <bpmn:textAnnotation id="TextAnnotation_Legende">
+      <bpmn:documentation>Camunda 7.21</bpmn:documentation>
+      <bpmn:text>LEGENDE:</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_Violett">
+      <bpmn:documentation>Camunda 7.21</bpmn:documentation>
+      <bpmn:text>VIOLETT - Anpassungen (Qualifizierung durch IT)</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_Orange">
+      <bpmn:documentation>Camunda 7.21</bpmn:documentation>
+      <bpmn:text>ORANGE - Anpassungen (keine Qualifizierung)</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_Blau">
+      <bpmn:documentation>Camunda 7.21</bpmn:documentation>
+      <bpmn:text>BLAU - Anpassungen (Qualifizierung durch CSV)</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_Weiss">
+      <bpmn:documentation>Camunda 7.21</bpmn:documentation>
+      <bpmn:text>WEISS - keine Anpassungen</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_Gruen">
+      <bpmn:documentation>Camunda 7.21</bpmn:documentation>
+      <bpmn:text>GRÜN - Anpassungen (Qualifizierung durch Q&amp;V)</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_Rot">
+      <bpmn:documentation>Camunda 7.21</bpmn:documentation>
+      <bpmn:text>ROT - Anpassungen (Qualifizierung Extern)</bpmn:text>
+    </bpmn:textAnnotation>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_Legende">
+      <bpmndi:BPMNShape id="BPMNShape_0ujvs00" bpmnElement="TextAnnotation_Legende">
+        <dc:Bounds x="300" y="100" width="280" height="25" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_126kkm2" bpmnElement="TextAnnotation_Violett" bioc:stroke="#5b176d" bioc:fill="#e1bee7" color:background-color="#e1bee7" color:border-color="#5b176d">
+        <dc:Bounds x="300" y="150" width="280" height="25" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1xnzn9i" bpmnElement="TextAnnotation_Orange" bioc:stroke="#6b3c00" bioc:fill="#ffe0b2" color:background-color="#ffe0b2" color:border-color="#6b3c00">
+        <dc:Bounds x="300" y="175" width="280" height="25" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_18guwyl" bpmnElement="TextAnnotation_Blau" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#0d4372">
+        <dc:Bounds x="300" y="200" width="280" height="25" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0qlhsi0" bpmnElement="TextAnnotation_Weiss">
+        <dc:Bounds x="300" y="125" width="280" height="25" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0l5s6t1" bpmnElement="TextAnnotation_Gruen" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="300" y="225" width="280" height="25" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_03vw8x3" bpmnElement="TextAnnotation_Rot" bioc:stroke="#831311" bioc:fill="#ffcdd2" color:background-color="#ffcdd2" color:border-color="#831311">
+        <dc:Bounds x="300" y="250" width="280" height="25" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
