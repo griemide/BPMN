@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_09nmc8k" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.25.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.21.0">
+  <bpmn:process id="Process_Information" name="Process-&#10;Information" isExecutable="false" camunda:versionTag="1.0" camunda:historyTimeToLive="P1D">
+    <bpmn:dataStoreReference id="DataStoreReference_Legend" name="Legend" />
+    <bpmn:dataObjectReference id="DataObjectReference_Requirements" name="URS" dataObjectRef="DataObject_0s5oqew" />
+    <bpmn:dataObject id="DataObject_0s5oqew" isCollection="true" />
+    <bpmn:dataObjectReference id="DataObjectReference_Reference" name="Reference" dataObjectRef="DataObject_00bvnb5" />
+    <bpmn:dataObject id="DataObject_00bvnb5" />
+    <bpmn:group id="Group_Label" categoryValueRef="CategoryValue_10ntg65" />
+    <bpmn:textAnnotation id="TextAnnotation_Author">
+      <bpmn:text>Author: Michael Gries, Q&amp;V Automation, michael.gries@bbraun.com, 2024</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_Requirements">
+      <bpmn:text>Anforderungen / Spezifikation:
+Prozessfluss gemäß Vorgaben CRP_PUC_DE13_182
+Anpassungen des Package Unit Controllers (PUC)</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_Reference">
+      <bpmn:text>Projekt / Change:
+Change 2685
+eWM Anpassungen OT Systeme LIFE1</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_Legend">
+      <bpmn:text>Legende / Erläuterungen:
+Farbdarstellungen siehe gesonderte Gruppe 'Legend'
+Die Lanes bezeichnen betroffene IT- / OT-Systeme</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_Legend" associationDirection="None" sourceRef="DataStoreReference_Legend" targetRef="TextAnnotation_Legend" />
+    <bpmn:association id="Association_Requirements" associationDirection="None" sourceRef="DataObjectReference_Requirements" targetRef="TextAnnotation_Requirements" />
+    <bpmn:association id="Association_Reference" associationDirection="None" sourceRef="DataObjectReference_Reference" targetRef="TextAnnotation_Reference" />
+  </bpmn:process>
+  <bpmn:category id="Category_1qah999">
+    <bpmn:categoryValue id="CategoryValue_10ntg65" value="Prozess-Information" />
+  </bpmn:category>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_Information">
+      <bpmndi:BPMNShape id="DataObjectReference_16p4jm7_di" bpmnElement="DataObjectReference_Reference">
+        <dc:Bounds x="192" y="113" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="185" y="170" width="52" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataStoreReference_1pf78gk_di" bpmnElement="DataStoreReference_Legend">
+        <dc:Bounds x="185" y="273" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="192" y="330" width="37" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="DataObjectReference_0xh6d6u_di" bpmnElement="DataObjectReference_Requirements">
+        <dc:Bounds x="192" y="193" width="36" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="198" y="250" width="24" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1k6yspz_di" bpmnElement="Association_Legend">
+        <di:waypoint x="235" y="300" />
+        <di:waypoint x="280" y="300" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_1xn7615_di" bpmnElement="Association_Requirements">
+        <di:waypoint x="230" y="220" />
+        <di:waypoint x="280" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Group_1p041qq_di" bpmnElement="Group_Label">
+        <dc:Bounds x="160" y="80" width="590" height="330" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="672" y="96" width="56" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1hpu1sr_di" bpmnElement="TextAnnotation_Author" bioc:stroke="#0d4372" bioc:fill="#bbdefb" color:background-color="#bbdefb" color:border-color="#a9a9a9">
+        <dc:Bounds x="190" y="360" width="490" height="31" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1rbe8cn_di" bpmnElement="TextAnnotation_Requirements" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="280" y="190" width="340" height="55" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0dvowxu" bpmnElement="TextAnnotation_Reference" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="280" y="110" width="330" height="55" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0a3o3eg" bpmnElement="TextAnnotation_Legend" bioc:stroke="#205022" bioc:fill="#c8e6c9" color:background-color="#c8e6c9" color:border-color="#205022">
+        <dc:Bounds x="280" y="270" width="330" height="55" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_09htu26_di" bpmnElement="Association_Reference">
+        <di:waypoint x="228" y="138" />
+        <di:waypoint x="280" y="138" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
