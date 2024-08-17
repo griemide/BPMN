@@ -47,11 +47,13 @@
   <bpmn:process id="Process_P1" name="P1" isExecutable="true" camunda:versionTag="1.0" camunda:historyTimeToLive="P1D">
     <bpmn:documentation>Doc-Process-P1</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_1l112ia">
-      <bpmn:lane id="Lane_04lzm8g" name="Execution">
+      <bpmn:lane id="Lane_Execution" name="Execution">
+        <bpmn:documentation>Doc-Execution</bpmn:documentation>
         <bpmn:flowNodeRef>Activity_P1-E01</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_P1-E02</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_1v22mdc" name="Coordination">
+      <bpmn:lane id="Lane_Coordination" name="Coordination">
+        <bpmn:documentation>Doc-Coordination</bpmn:documentation>
         <bpmn:flowNodeRef>Activity_P1-C02</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_P1-C01</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_P1-C-M01</bpmn:flowNodeRef>
@@ -88,17 +90,20 @@
   <bpmn:process id="Process_P2" name="P2" isExecutable="true" camunda:versionTag="1.0" camunda:historyTimeToLive="P1D">
     <bpmn:documentation>Doc-Process-P2</bpmn:documentation>
     <bpmn:laneSet id="LaneSet_1es00tx">
-      <bpmn:lane id="Lane_0fbzwu7" name="Level 3&#10;Interface">
+      <bpmn:lane id="Lane_L3_Interface" name="Level 3&#10;Interface">
+        <bpmn:documentation>Doc-L3_Interface</bpmn:documentation>
         <bpmn:flowNodeRef>Event_P2-L3S-M01</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_P2-L3S-M02</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_P2-L3S-T01</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_0vsth58" name="Level 1&#10;Interface">
+      <bpmn:lane id="Lane_L1_Interface" name="Level 1&#10;Interface">
+        <bpmn:documentation>Doc-L1_Interface</bpmn:documentation>
         <bpmn:flowNodeRef>Event_P2-L1S-M01</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_P2-L1S-F1</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Event_P2-L1S-M02</bpmn:flowNodeRef>
       </bpmn:lane>
-      <bpmn:lane id="Lane_0b2293x" name="Level 2&#10;Execution">
+      <bpmn:lane id="Lane_L3_Execution" name="Level 2&#10;Execution">
+        <bpmn:documentation>Doc-L3_Execution</bpmn:documentation>
         <bpmn:flowNodeRef>Activity_P2-E01</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Activity_P2-E02</bpmn:flowNodeRef>
         <bpmn:flowNodeRef>Gateway_P2-G02</bpmn:flowNodeRef>
@@ -202,11 +207,11 @@
         <dc:Bounds x="200" y="370" width="1430" height="320" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_1v22mdc_di" bpmnElement="Lane_1v22mdc" isHorizontal="true">
+      <bpmndi:BPMNShape id="Lane_1v22mdc_di" bpmnElement="Lane_Coordination" isHorizontal="true">
         <dc:Bounds x="230" y="370" width="1400" height="160" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_04lzm8g_di" bpmnElement="Lane_04lzm8g" isHorizontal="true">
+      <bpmndi:BPMNShape id="Lane_04lzm8g_di" bpmnElement="Lane_Execution" isHorizontal="true">
         <dc:Bounds x="230" y="530" width="1400" height="160" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
@@ -251,15 +256,15 @@
         <dc:Bounds x="200" y="770" width="1050" height="320" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_0b2293x_di" bpmnElement="Lane_0b2293x" isHorizontal="true">
+      <bpmndi:BPMNShape id="Lane_0b2293x_di" bpmnElement="Lane_L3_Execution" isHorizontal="true">
         <dc:Bounds x="230" y="850" width="1020" height="160" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_0vsth58_di" bpmnElement="Lane_0vsth58" isHorizontal="true">
+      <bpmndi:BPMNShape id="Lane_0vsth58_di" bpmnElement="Lane_L1_Interface" isHorizontal="true">
         <dc:Bounds x="230" y="770" width="1020" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="Lane_0fbzwu7_di" bpmnElement="Lane_0fbzwu7" isHorizontal="true">
+      <bpmndi:BPMNShape id="Lane_0fbzwu7_di" bpmnElement="Lane_L3_Interface" isHorizontal="true">
         <dc:Bounds x="230" y="1010" width="1020" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
