@@ -7,9 +7,9 @@ https://github.com/griemide/mgBPMN
 ### Participant Handling & Token Simulation
 ![Pool](images/Participant_Token-Simulation_Testset.svg)
 
-### Conditional Flow Handling & Token Simulation
-![Conditional](images/Acceptance_Testing.svg)
+### Data Integrity & Token Simulation
 ![Token Simulation](images/Data_Integrity_-_Projectscope_github.gif)
+![Token Simulation](images/Data_Integrity_-_Projectscope.svg)
 
 
 ---
@@ -49,3 +49,7 @@ https://github.com/griemide/mgBPMN
 - **Data Object**: Daten, die verwendet oder erzeugt werden  
 - **Group**: Visuelle Gruppierung von Elementen  
 - **Annotation (Text Annotation)**: Kommentare oder Erklärungen
+
+# Workshop example - Acceptance Testing (Token Simulation example)
+![Conditional](images/Acceptance_Testing.svg)
+
