@@ -1,14 +1,14 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9" pages="4">
   <diagram name="Overview" id="YfPhewbXs6lOoYcUwz4W">
-    <mxGraphModel dx="749" dy="397" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1048" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="QyfHaMKDJfwrlfqyTy3i-1" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;fillColor=#eeeeee;strokeColor=#36393d;" value="Start/ End of&lt;br&gt;Process" vertex="1">
-          <mxGeometry height="60" width="100" x="130" y="200" as="geometry" />
+          <mxGeometry height="60" width="120" x="120" y="200" as="geometry" />
         </mxCell>
         <mxCell id="QyfHaMKDJfwrlfqyTy3i-2" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;fillColor=#eeeeee;strokeColor=#36393d;" value="Incoming Interface" vertex="1">
-          <mxGeometry height="60" width="100" x="130" y="340" as="geometry" />
+          <mxGeometry height="60" width="120" x="120" y="340" as="geometry" />
         </mxCell>
         <mxCell id="QyfHaMKDJfwrlfqyTy3i-3" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" value="Decision" vertex="1">
           <mxGeometry height="100" width="100" x="320" y="180" as="geometry" />
@@ -31,17 +31,17 @@
         <mxCell id="QyfHaMKDJfwrlfqyTy3i-9" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="Manual &lt;br&gt;Data &lt;br&gt;Capture" vertex="1">
           <mxGeometry height="100" width="100" x="630" y="185" as="geometry" />
         </mxCell>
-        <mxCell id="QyfHaMKDJfwrlfqyTy3i-10" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
+        <mxCell id="QyfHaMKDJfwrlfqyTy3i-10" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.polygon;polyCoords=[[0.25,0],[0.75,0],[1,0.25],[1,0.75],[0.75,1],[0.25,1],[0,0.75],[0,0.25]];polyline=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Autom. &lt;br&gt;Data &lt;br&gt;Capture" vertex="1">
           <mxGeometry height="100" width="100" x="630" y="330" as="geometry" />
         </mxCell>
         <mxCell id="QyfHaMKDJfwrlfqyTy3i-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#bac8d3;strokeColor=#23445d;" value="Copy / Move /&lt;br&gt;Deletion of Data" vertex="1">
           <mxGeometry height="60" width="120" x="790" y="340" as="geometry" />
         </mxCell>
-        <mxCell id="QyfHaMKDJfwrlfqyTy3i-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Text" vertex="1">
-          <mxGeometry height="30" width="60" x="130" y="100" as="geometry" />
+        <mxCell id="QyfHaMKDJfwrlfqyTy3i-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=19;" value="Legend:" vertex="1">
+          <mxGeometry height="30" width="67" x="150" y="130" as="geometry" />
         </mxCell>
         <mxCell id="QyfHaMKDJfwrlfqyTy3i-13" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.loop_limit;whiteSpace=wrap;fillColor=#eeeeee;strokeColor=#36393d;direction=west;" value="Outgoing Interface" vertex="1">
-          <mxGeometry height="60" width="100" x="130" y="470" as="geometry" />
+          <mxGeometry height="60" width="120" x="120" y="470" as="geometry" />
         </mxCell>
         <mxCell id="QyfHaMKDJfwrlfqyTy3i-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
           <mxGeometry relative="1" as="geometry">
@@ -49,7 +49,7 @@
             <mxPoint x="1040" y="240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QyfHaMKDJfwrlfqyTy3i-15" connectable="0" parent="QyfHaMKDJfwrlfqyTy3i-14" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Data flow" vertex="1">
+        <mxCell id="QyfHaMKDJfwrlfqyTy3i-15" connectable="0" parent="QyfHaMKDJfwrlfqyTy3i-14" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontSize=12;" value="Data flow" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="QyfHaMKDJfwrlfqyTy3i-16" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=8 8;" value="">
@@ -58,7 +58,7 @@
             <mxPoint x="1040" y="280" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="QyfHaMKDJfwrlfqyTy3i-17" connectable="0" parent="QyfHaMKDJfwrlfqyTy3i-16" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" value="Relation" vertex="1">
+        <mxCell id="QyfHaMKDJfwrlfqyTy3i-17" connectable="0" parent="QyfHaMKDJfwrlfqyTy3i-16" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;fontSize=12;" value="Relation" vertex="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
