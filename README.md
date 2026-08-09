@@ -3,7 +3,7 @@ Business Process Model and Notation
 
 ## BPMN Sketch Miner (as quick alternativ with AI support)
 Homepage: [BPMN Sketch Miner](https://www.bpmn-sketch-miner.ai/index.html)  
-Example [Michael Gries](https://www.bpmn-sketch-miner.ai/index.html#EYBwNgdgXAbgjAKALRIQIQAoFkByACAZQGsBTAFwGMALPLASwhICcoEEARJgQwHc8BnOgFtwJPJlx4AJnS4BzbkP4IAFGWHM8XflxABKBNrwBPAPYBXaSX4UmdYGLJUSQvDzpOBZU3etsA9IEEZFxMZHjAxm526hByJhZMeGB0-OGmAGZ4IfxEyvTUXCRgeADivsoATAAMlQBsSNUAHI0AnAiB-qaMeN14JFzUyQwkAHTjCEA)
+> Example: [![example](images/BPMN_Sketch_Miner.svg)](https://www.bpmn-sketch-miner.ai/index.html#EYBwNgdgXAbgjAKALRIQIQAoFkByACAZQGsBTAFwGMALPLASwhICcoEEARJgQwHc8BnOgFtwJPJlx4AJnS4BzbkP4IAFGWHM8XflxABKBNrwBPAPYBXaSX4UmdYGLJUSQvDzpOBZU3etsA9IEEZFxMZHjAxm526hByJhZMeGB0-OGmAGZ4IfxEyvTUXCRgeADivsoATAAMlQBsSNUAHI0AnAiB-qaMeN14JFzUyQwkAHTjCEA)
 
 ## Camunda (as alternativ to Diagrams.net aka draw.io)
 Blog: [BPMN diagrams to document business processes.](https://viewer.diagrams.net/index.html?splash=0&ui=kennedy&ibs=bpmn2&title=#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Fjgraph%2Fdrawio-diagrams%2Fdev%2Fblog%2Fbpmn-2-example.drawio#%7B%22pageId%22%3A%22C22Zyo9x9_IkmYV2H3KQ%22%7D)
