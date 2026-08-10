@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="definitions_2" targetNamespace="http://www.bpmn-sketch-miner.ai" exporter="BPMN Sketch Miner" exporterVersion="1.17.6.3337">
  <bpmn:collaboration id="collaboration_3">
  <bpmn:participant id="participant_7" name="" processRef="process_6"/>
+ <bpmn:participant id="participant_26" name="" processRef="process_25"/>
 </bpmn:collaboration>
 
  <bpmn:process id="process_6" isExecutable="false">
@@ -22,7 +23,7 @@
 
  <bpmn:flowNodeRef>task_17</bpmn:flowNodeRef>
 
- <bpmn:flowNodeRef>task_18</bpmn:flowNodeRef>
+ <bpmn:flowNodeRef>textAnnotation_18</bpmn:flowNodeRef>
 
 </bpmn:lane>
 
@@ -34,7 +35,7 @@
 </bpmn:startEvent>
 
  <bpmn:endEvent id="endEvent_11">
- <bpmn:incoming>sequenceFlow_24</bpmn:incoming>
+ <bpmn:incoming>sequenceFlow_23</bpmn:incoming>
 
 </bpmn:endEvent>
 
@@ -44,7 +45,7 @@
 </bpmn:startEvent>
 
  <bpmn:endEvent id="endEvent_13">
- <bpmn:incoming>sequenceFlow_25</bpmn:incoming>
+ <bpmn:incoming>sequenceFlow_24</bpmn:incoming>
 
 </bpmn:endEvent>
 
@@ -68,132 +69,217 @@ diagrams">
 with stories">
  <bpmn:incoming>sequenceFlow_21</bpmn:incoming>
 
- <bpmn:outgoing>sequenceFlow_24</bpmn:outgoing>
-
-</bpmn:task>
-
- <bpmn:task id="task_17" name="Michael Gries">
- <bpmn:incoming>sequenceFlow_22</bpmn:incoming>
-
  <bpmn:outgoing>sequenceFlow_23</bpmn:outgoing>
 
 </bpmn:task>
 
- <bpmn:task id="task_18" name="2026-08-09">
- <bpmn:incoming>sequenceFlow_23</bpmn:incoming>
+ <bpmn:task id="task_17" name="additonal flow">
+ <bpmn:incoming>sequenceFlow_22</bpmn:incoming>
 
- <bpmn:outgoing>sequenceFlow_25</bpmn:outgoing>
+ <bpmn:outgoing>sequenceFlow_24</bpmn:outgoing>
 
 </bpmn:task>
+
+ <bpmn:textAnnotation id="textAnnotation_18">
+ <bpmn:text>Updated by</bpmn:text>
+
+</bpmn:textAnnotation>
 
  <bpmn:sequenceFlow id="sequenceFlow_19" sourceRef="startEvent_10" targetRef="task_14"/>
  <bpmn:sequenceFlow id="sequenceFlow_20" sourceRef="task_14" targetRef="intermediateCatchEvent_15"/>
  <bpmn:sequenceFlow id="sequenceFlow_21" sourceRef="intermediateCatchEvent_15" targetRef="task_16"/>
  <bpmn:sequenceFlow id="sequenceFlow_22" sourceRef="startEvent_12" targetRef="task_17"/>
- <bpmn:sequenceFlow id="sequenceFlow_23" sourceRef="task_17" targetRef="task_18"/>
- <bpmn:sequenceFlow id="sequenceFlow_24" sourceRef="task_16" targetRef="endEvent_11"/>
- <bpmn:sequenceFlow id="sequenceFlow_25" sourceRef="task_18" targetRef="endEvent_13"/>
+ <bpmn:sequenceFlow id="sequenceFlow_23" sourceRef="task_16" targetRef="endEvent_11"/>
+ <bpmn:sequenceFlow id="sequenceFlow_24" sourceRef="task_17" targetRef="endEvent_13"/>
+</bpmn:process>
+
+ <bpmn:process id="process_25" isExecutable="false">
+ <bpmn:laneSet id="laneSet_27">
+ <bpmn:lane id="lane_28" name="Author">
+ <bpmn:flowNodeRef>startEvent_29</bpmn:flowNodeRef>
+
+ <bpmn:flowNodeRef>endEvent_30</bpmn:flowNodeRef>
+
+ <bpmn:flowNodeRef>task_user_31</bpmn:flowNodeRef>
+
+ <bpmn:flowNodeRef>task_service_32</bpmn:flowNodeRef>
+
+</bpmn:lane>
+
+</bpmn:laneSet>
+
+ <bpmn:startEvent id="startEvent_29">
+ <bpmn:outgoing>sequenceFlow_33</bpmn:outgoing>
+
+</bpmn:startEvent>
+
+ <bpmn:endEvent id="endEvent_30">
+ <bpmn:incoming>sequenceFlow_35</bpmn:incoming>
+
+</bpmn:endEvent>
+
+ <bpmn:userTask id="task_user_31" name="Michael Gries">
+ <bpmn:incoming>sequenceFlow_33</bpmn:incoming>
+
+ <bpmn:outgoing>sequenceFlow_34</bpmn:outgoing>
+
+</bpmn:userTask>
+
+ <bpmn:serviceTask id="task_service_32" name="2026-08-09">
+ <bpmn:incoming>sequenceFlow_34</bpmn:incoming>
+
+ <bpmn:outgoing>sequenceFlow_35</bpmn:outgoing>
+
+</bpmn:serviceTask>
+
+ <bpmn:sequenceFlow id="sequenceFlow_33" sourceRef="startEvent_29" targetRef="task_user_31"/>
+ <bpmn:sequenceFlow id="sequenceFlow_34" sourceRef="task_user_31" targetRef="task_service_32"/>
+ <bpmn:sequenceFlow id="sequenceFlow_35" sourceRef="task_service_32" targetRef="endEvent_30"/>
+ <bpmn:association id="association_36" sourceRef="textAnnotation_18" targetRef="task_user_31"/>
 </bpmn:process>
 
  <bpmndi:BPMNDiagram id="BPMNDiagram_4">
  <bpmndi:BPMNPlane id="BPMNPlane_5" bpmnElement="collaboration_3">
  <bpmndi:BPMNShape id="participant_7_di" bpmnElement="participant_7" isHorizontal="true">
- <dc:Bounds x="-40" y="50" width="713" height="213"/>
+ <dc:Bounds x="-40" y="50" width="778" height="213"/>
 </bpmndi:BPMNShape>
 
  <bpmndi:BPMNShape id="lane_9_di" bpmnElement="lane_9" isHorizontal="true">
- <dc:Bounds x="-40" y="50" width="713" height="213"/>
+ <dc:Bounds x="-40" y="50" width="778" height="213"/>
 </bpmndi:BPMNShape>
 
  <bpmndi:BPMNShape id="startEvent_10_di" bpmnElement="startEvent_10" isHorizontal="false">
- <dc:Bounds x="25" y="102" width="20" height="20"/>
+ <dc:Bounds x="66" y="102" width="20" height="20"/>
 </bpmndi:BPMNShape>
 
  <bpmndi:BPMNShape id="endEvent_11_di" bpmnElement="endEvent_11" isHorizontal="false">
- <dc:Bounds x="588" y="102" width="20" height="20"/>
+ <dc:Bounds x="653" y="102" width="20" height="20"/>
 </bpmndi:BPMNShape>
 
  <bpmndi:BPMNShape id="startEvent_12_di" bpmnElement="startEvent_12" isHorizontal="false">
- <dc:Bounds x="137" y="199" width="20" height="20"/>
+ <dc:Bounds x="371" y="199" width="20" height="20"/>
 </bpmndi:BPMNShape>
 
  <bpmndi:BPMNShape id="endEvent_13_di" bpmnElement="endEvent_13" isHorizontal="false">
- <dc:Bounds x="588" y="199" width="20" height="20"/>
+ <dc:Bounds x="653" y="199" width="20" height="20"/>
 </bpmndi:BPMNShape>
 
  <bpmndi:BPMNShape id="task_14_di" bpmnElement="task_14" isHorizontal="false">
- <dc:Bounds x="70" y="85" width="154" height="55"/>
+ <dc:Bounds x="153" y="85" width="154" height="55"/>
  <bpmndi:BPMNLabel>
- <dc:Bounds x="70" y="110" width="20" height="20"/>
+ <dc:Bounds x="153" y="110" width="20" height="20"/>
 </bpmndi:BPMNLabel>
 
 </bpmndi:BPMNShape>
 
  <bpmndi:BPMNShape id="intermediateCatchEvent_15_di" bpmnElement="intermediateCatchEvent_15" isHorizontal="false">
- <dc:Bounds x="297" y="102" width="20" height="20"/>
+ <dc:Bounds x="371" y="102" width="20" height="20"/>
  <bpmndi:BPMNLabel>
- <dc:Bounds x="291" y="129" width="33" height="19"/>
+ <dc:Bounds x="365" y="129" width="33" height="19"/>
 </bpmndi:BPMNLabel>
 
 </bpmndi:BPMNShape>
 
  <bpmndi:BPMNShape id="task_16_di" bpmnElement="task_16" isHorizontal="false">
- <dc:Bounds x="389" y="85" width="173" height="55"/>
+ <dc:Bounds x="455" y="85" width="173" height="55"/>
  <bpmndi:BPMNLabel>
- <dc:Bounds x="389" y="110" width="20" height="20"/>
+ <dc:Bounds x="455" y="110" width="20" height="20"/>
 </bpmndi:BPMNLabel>
 
 </bpmndi:BPMNShape>
 
  <bpmndi:BPMNShape id="task_17_di" bpmnElement="task_17" isHorizontal="false">
- <dc:Bounds x="249" y="190" width="116" height="39"/>
+ <dc:Bounds x="481" y="190" width="122" height="39"/>
  <bpmndi:BPMNLabel>
- <dc:Bounds x="249" y="215" width="116" height="39"/>
+ <dc:Bounds x="481" y="215" width="122" height="39"/>
 </bpmndi:BPMNLabel>
 
 </bpmndi:BPMNShape>
 
- <bpmndi:BPMNShape id="task_18_di" bpmnElement="task_18" isHorizontal="false">
- <dc:Bounds x="427" y="190" width="99" height="39"/>
- <bpmndi:BPMNLabel>
- <dc:Bounds x="427" y="215" width="99" height="39"/>
-</bpmndi:BPMNLabel>
-
+ <bpmndi:BPMNShape id="textAnnotation_18_di" bpmnElement="textAnnotation_18" isHorizontal="false">
+ <dc:Bounds x="25" y="181" width="103" height="39"/>
 </bpmndi:BPMNShape>
 
  <bpmndi:BPMNEdge id="sequenceFlow_19_di" bpmnElement="sequenceFlow_19">
- <di:waypoint x="45" y="112"/>
- <di:waypoint x="70" y="112"/>
+ <di:waypoint x="86" y="112"/>
+ <di:waypoint x="153" y="112"/>
 </bpmndi:BPMNEdge>
 
  <bpmndi:BPMNEdge id="sequenceFlow_20_di" bpmnElement="sequenceFlow_20">
- <di:waypoint x="224" y="112"/>
- <di:waypoint x="290" y="112"/>
+ <di:waypoint x="306" y="112"/>
+ <di:waypoint x="364" y="112"/>
 </bpmndi:BPMNEdge>
 
  <bpmndi:BPMNEdge id="sequenceFlow_21_di" bpmnElement="sequenceFlow_21">
- <di:waypoint x="323" y="112"/>
- <di:waypoint x="389" y="112"/>
+ <di:waypoint x="397" y="112"/>
+ <di:waypoint x="455" y="112"/>
 </bpmndi:BPMNEdge>
 
  <bpmndi:BPMNEdge id="sequenceFlow_22_di" bpmnElement="sequenceFlow_22">
- <di:waypoint x="157" y="209"/>
- <di:waypoint x="249" y="209"/>
+ <di:waypoint x="391" y="209"/>
+ <di:waypoint x="481" y="209"/>
 </bpmndi:BPMNEdge>
 
  <bpmndi:BPMNEdge id="sequenceFlow_23_di" bpmnElement="sequenceFlow_23">
- <di:waypoint x="364" y="209"/>
- <di:waypoint x="427" y="209"/>
+ <di:waypoint x="628" y="112"/>
+ <di:waypoint x="653" y="112"/>
 </bpmndi:BPMNEdge>
 
  <bpmndi:BPMNEdge id="sequenceFlow_24_di" bpmnElement="sequenceFlow_24">
- <di:waypoint x="563" y="112"/>
- <di:waypoint x="588" y="112"/>
+ <di:waypoint x="603" y="209"/>
+ <di:waypoint x="653" y="209"/>
 </bpmndi:BPMNEdge>
 
- <bpmndi:BPMNEdge id="sequenceFlow_25_di" bpmnElement="sequenceFlow_25">
- <di:waypoint x="525" y="209"/>
- <di:waypoint x="588" y="209"/>
+ <bpmndi:BPMNShape id="participant_26_di" bpmnElement="participant_26" isHorizontal="true">
+ <dc:Bounds x="-40" y="283" width="778" height="109"/>
+</bpmndi:BPMNShape>
+
+ <bpmndi:BPMNShape id="lane_28_di" bpmnElement="lane_28" isHorizontal="true">
+ <dc:Bounds x="-40" y="283" width="778" height="109"/>
+</bpmndi:BPMNShape>
+
+ <bpmndi:BPMNShape id="startEvent_29_di" bpmnElement="startEvent_29" isHorizontal="false">
+ <dc:Bounds x="66" y="328" width="20" height="20"/>
+</bpmndi:BPMNShape>
+
+ <bpmndi:BPMNShape id="endEvent_30_di" bpmnElement="endEvent_30" isHorizontal="false">
+ <dc:Bounds x="532" y="328" width="20" height="20"/>
+</bpmndi:BPMNShape>
+
+ <bpmndi:BPMNShape id="task_user_31_di" bpmnElement="task_user_31" isHorizontal="false">
+ <dc:Bounds x="172" y="318" width="116" height="39"/>
+ <bpmndi:BPMNLabel>
+ <dc:Bounds x="172" y="343" width="20" height="20"/>
+</bpmndi:BPMNLabel>
+
+</bpmndi:BPMNShape>
+
+ <bpmndi:BPMNShape id="task_service_32_di" bpmnElement="task_service_32" isHorizontal="false">
+ <dc:Bounds x="331" y="318" width="99" height="39"/>
+ <bpmndi:BPMNLabel>
+ <dc:Bounds x="331" y="343" width="20" height="20"/>
+</bpmndi:BPMNLabel>
+
+</bpmndi:BPMNShape>
+
+ <bpmndi:BPMNEdge id="sequenceFlow_33_di" bpmnElement="sequenceFlow_33">
+ <di:waypoint x="86" y="338"/>
+ <di:waypoint x="172" y="338"/>
+</bpmndi:BPMNEdge>
+
+ <bpmndi:BPMNEdge id="sequenceFlow_34_di" bpmnElement="sequenceFlow_34">
+ <di:waypoint x="287" y="338"/>
+ <di:waypoint x="331" y="338"/>
+</bpmndi:BPMNEdge>
+
+ <bpmndi:BPMNEdge id="sequenceFlow_35_di" bpmnElement="sequenceFlow_35">
+ <di:waypoint x="430" y="338"/>
+ <di:waypoint x="532" y="338"/>
+</bpmndi:BPMNEdge>
+
+ <bpmndi:BPMNEdge id="association_36_di" bpmnElement="association_36">
+ <di:waypoint x="98" y="220"/>
+ <di:waypoint x="208" y="318"/>
 </bpmndi:BPMNEdge>
 
 </bpmndi:BPMNPlane>
@@ -211,9 +297,14 @@ Draw simple BPMN diagrams
 as you describe them with stories
 
 ///Start by writing your list of tasks
-Michael Gries
-2026-08-09
+additonal flow
 ///one on each line...
+
+///Impressum
+//Updated by
+Author:
+user Michael Gries
+service 2026-08-09
 
 
 -->
